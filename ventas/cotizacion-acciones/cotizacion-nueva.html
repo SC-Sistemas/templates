@@ -180,15 +180,34 @@
                 div.classList.add("mb-3");
 
                 div.innerHTML = `
-                <h5>Dependiente ${i}</h5>
+                <h5 class="">Dependiente ${i}</h5>
                 <label>Nombre:</label>
-                <input type="text" id="idNombreDependiente${i}" class="form-control mb-2" name="nombre${i}" required>
+                <input type="text" id="nombreDependiente${i}" class="form-control mb-2" name="nombre${i}" required>
 
                 <label>Edad:</label>
-                <input type="number" id="idEdadDependiente${i}" class="form-control mb-2" name="edad${i}" required>
+                <input type="number" id="edadDependiente${i}" class="form-control mb-2" name="edad${i}" required>
 
-                <label>Parentesco:</label>
-                <input type="text" class="form-control mb-2" name="parentesco${i}" required>
+                <div class="input-group mb-3">
+                  <label class="input-group-text" 
+                    >Sexo</label
+                  >
+                  <select class="form-select" id="sexoDependiente${i}">
+                    <option selected disabled>Sexo del Dependiente</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                  </select>
+                </div>
+                <div class="input-group mb-3">
+                  <span class="input-group-text">Prima de Tarifa</span>
+                  <input
+                    type="text"
+                    id="primaTarifaDependiente${i}"
+                    class="form-control"
+                    placeholder="Prima de Tarifa del Dependiente"
+                    aria-describedby="basic-addon1"
+                  />
+                  <span ></span>
+                </div>
               `;
 
                 contenedorFormularios.appendChild(div);
