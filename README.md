@@ -13,4 +13,8 @@ Este proyecto servirá como la interfaz principal para el sistema interno. Su co
 
 ## 🛠️ Instrucciones de uso
 
-**Responsable del front-end:** Gabriel Hernández – [@GabrielHernandezZam](https://github.com/GabrielHernandezZam)
+**Responsables:** 
+Gabriel Hernández – [@GabrielHernandezZam](https://github.com/GabrielHernandezZam)
+Fabian Hernandez - [@FnHdezLamarque](https://github.com/FnHdezLamarque)
+
+
