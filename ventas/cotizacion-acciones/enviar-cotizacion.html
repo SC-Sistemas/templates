@@ -13,22 +13,46 @@
     <div class="container mt-5">
       <h1>Enviar a Suscripcion</h1>
       <form id="formEnviarSuscripcion" class="form-group">
+        <p>Subir documento en PDF</p>
         <div class="input-group mb-3">
-          <label class="input-group-text" for="documentoINE"
-            >INE del Asegurado</label
-          >
-          <input type="file" class="form-control" id="documentoINE" />
+          <label class="input-group-text" for="inePDF">INE del Asegurado</label>
+          <input type="file" class="form-control" id="inePDF" />
         </div>
+        <p>Subir documento en PDF</p>
         <div class="input-group mb-3">
-          <label class="input-group-text" for="formatoCotejo"
+          <label class="input-group-text" for="cotejoPDF"
             >Formato de Cotejo</label
           >
-          <input type="file" class="form-control" id="documentoINE" />
+          <input type="file" class="form-control" id="cotejoPDF" />
+        </div>
+        <p>Cotizacion Generada por Automatico por el Sistema</p>
+        <div class="input-group mb-3">
+          <label class="input-group-text" for="cotizacionPDF"
+            >Documento Cotizacion</label
+          >
+          <input type="file" class="form-control" id="cotizacionPDF" />
         </div>
       </form>
-      <a class="btn btn-outline-primary" href="../inicio.html"
-        >Regresar a Inicio</a
-      >
+
+      <div class="d-flex justify-content-between mt-3">
+        <a class="btn btn-outline-primary" href="cotizacion-inicio.html"
+          >Regresar a Inicio</a
+        >
+        <button class="btn btn-outline-success" id="btnEnviarSuscripcion">
+          Enviar a Suscripcion
+        </button>
+
+        <script>
+          let enviarSuscripcion = document.getElementById(
+            "btnEnviarSuscripcion"
+          );
+          enviarSuscripcion.addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar el envío del formulario por defecto
+            alert("Cotizacion Enviada a Suscripcion");
+            window.location.href = "cotizacion-inicio.html"; // Redirigir a la página de inicio
+          });
+        </script>
+      </div>
     </div>
   </body>
 </html>
