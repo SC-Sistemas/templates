@@ -91,9 +91,17 @@
       <a class="btn btn-outline-primary" href="../inicio.html">
         Regresar a Inicio</a
       >
-      <button class="btn btn-outline-primary" href="../inicio.html">
+      <button class="btn btn-warning" id="btnActualizarDatos">
         Actualizar Datos
       </button>
+      <script>
+        let actualizarDatos = document.getElementById("btnActualizarDatos");
+        actualizarDatos.addEventListener("click", function (event) {
+          event.preventDefault(); // Evitar el envío del formulario por defecto
+          alert("Datos Actualizados");
+          window.location.href = "../inicio.html"; // Redirigir a la página de inicio
+        });
+      </script>
     </div>
   </body>
 </html>
