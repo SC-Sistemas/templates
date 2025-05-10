@@ -12,15 +12,15 @@
   <body>
     <div class="container mt-5">
       <h1>Generacion de cotizaciones</h1>
-      <form id="formDatosPaciente" class="form-group">
+      <form id="formDatosCliente" class="form-group">
         <p class="">Datos capturados del sistema</p>
         <div class="input-group mb-3">
           <span class="input-group-text">Nombre:</span>
           <input
             type="text"
-            id="nombre"
+            id="nombreCliente"
             class="form-control"
-            placeholder="Nombre del paciente"
+            placeholder="Nombre del Cliente"
             aria-describedby="basic-addon1"
           />
         </div>
@@ -28,7 +28,7 @@
           <span class="input-group-text">Apellido Paterno:</span>
           <input
             type="text"
-            id="apellidoPaterno"
+            id="apellidoPaternoCliente"
             class="form-control"
             placeholder="Apellido Paterno"
             aria-describedby="basic-addon1"
@@ -38,7 +38,7 @@
           <span class="input-group-text">Apellido Materno:</span>
           <input
             type="text"
-            id="apellidoMaterno"
+            id="apellidoMaternoCliente"
             class="form-control"
             placeholder="Apellido Paterno"
             aria-describedby="basic-addon1"
@@ -46,8 +46,8 @@
         </div>
         <div class="input-group mb-3">
           <label class="input-group-text" for="inputGroupSelect01">Sexo</label>
-          <select class="form-select" id="sexoPaciente">
-            <option selected disabled>Sexo del Paciente</option>
+          <select class="form-select" id="sexoCliente">
+            <option selected disabled>Sexo del Cliente</option>
             <option value="femenino">Femenino</option>
             <option value="masculino">Masculino</option>
           </select>
@@ -56,9 +56,9 @@
           <span class="input-group-text">RFC:</span>
           <input
             type="text"
-            id="rfc"
+            id="rfcCliente"
             class="form-control"
-            placeholder="RFC del Asegurado"
+            placeholder="RFC del Cliente"
             aria-describedby="basic-addon1"
           />
         </div>

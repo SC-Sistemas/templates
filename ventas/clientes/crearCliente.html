@@ -7,7 +7,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <title>Datos del Asegurado</title>
+    <title>Datos del Cliente</title>
   </head>
   <body>
     <div class="container mt-5">
@@ -15,14 +15,14 @@
       <div>
         <div class="mt-5">
           <!--Formulario de datos del Asegurado -->
-          <form id="formDatosAsegurado" class="form-group">
+          <form id="formDatosCliente" class="form-group">
             <div class="input-group mb-3">
               <span class="input-group-text">ID:</span>
               <input
                 type="text"
                 id="idAsegurado"
                 class="form-control"
-                placeholder="Nombre del paciente"
+                placeholder="ID del Cliente"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -30,9 +30,9 @@
               <span class="input-group-text">Nombre:</span>
               <input
                 type="text"
-                id="nombre"
+                id="nombreCliente"
                 class="form-control"
-                placeholder="Nombre del Asegurado"
+                placeholder="Nombre del Cliente"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -40,7 +40,7 @@
               <span class="input-group-text">Apellido Paterno:</span>
               <input
                 type="text"
-                id="apellidoPaterno"
+                id="apellidoPaternoCliente"
                 class="form-control"
                 placeholder="Apellido Paterno"
                 aria-describedby="basic-addon1"
@@ -50,7 +50,7 @@
               <span class="input-group-text">Apellido Materno:</span>
               <input
                 type="text"
-                id="apellidoMaterno"
+                id="apellidoMaternoCliente"
                 class="form-control"
                 placeholder="Apellido Paterno"
                 aria-describedby="basic-addon1"
@@ -60,8 +60,8 @@
               <label class="input-group-text" for="inputGroupSelect01"
                 >Sexo</label
               >
-              <select class="form-select" id="sexoAsegurado">
-                <option selected disabled>Sexo del Asegurado</option>
+              <select class="form-select" id="sexoCliente">
+                <option selected disabled>Sexo del Cliente</option>
                 <option value="femenino">Femenino</option>
                 <option value="masculino">Masculino</option>
               </select>
@@ -70,9 +70,9 @@
               <span class="input-group-text">RFC:</span>
               <input
                 type="text"
-                id="rfc"
+                id="rfcCliente"
                 class="form-control"
-                placeholder="RFC del Asegurado"
+                placeholder="RFC del Cliente"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -83,18 +83,20 @@
               <input
                 type="date"
                 class="form-control"
-                id="fechaNacimiento"
+                id="fechaNacimientoCliente"
                 name="fechaNacimiento"
               />
             </div>
           </form>
         </div>
-        <a class="btn btn-outline-primary" href="../inicio.html">
-          Regresar a Inicio</a
-        >
-        <button class="btn btn-outline-primary" href="../inicio.html">
-          Crear Cliente
-        </button>
+        <div class="d-flex justify-content-between mt-3">
+          <a class="btn btn-outline-primary" href="../inicio.html">
+            Regresar a Inicio
+          </a>
+          <button class="btn btn-success" type="submit" form="formDatosCliente">
+            Crear Cliente
+          </button>
+        </div>
       </div>
     </div>
   </body>
