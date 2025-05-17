@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Revision de datos</title>
+  </head>
+  <body>
+    <div>
+      <div class="container mt-5">
+        <h1>Revision de datos de la primera etapa de Suscripcion</h1>
+        <div class="mt-4">
+          <a class="btn btn-outline-primary" href="../index.html">Regresar</a>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <h3>Datos del clientes y dependientes</h3>
+        <table class="table table-striped mt-3">
+          <thead>
+            <tr>
+              <th>No. Cliente</th>
+              <th>Nombre</th>
+              <th>Datos</th>
+            </tr>
+          </thead>
+          <tr>
+            <td id="idCliente">001</td>
+            <td id="nomCliente">Jesus Hernandez</td>
+            <td>
+              <a
+                class="btn btn-primary"
+                href="../../ventas/clientes/datosCliente.html"
+                >Datos del cliente</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td id="idCliente">002</td>
+            <td id="nomCliente">Fabian Hernandez</td>
+            <td>
+              <a
+                class="btn btn-primary"
+                href="../../ventas/clientes/datosCliente.html"
+                >Datos del cliente</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td id="idCliente">003</td>
+            <td id="nomCliente">Jaqueline Hernandez</td>
+            <td>
+              <a
+                class="btn btn-primary"
+                href="../../ventas/clientes/datosCliente.html"
+                >Datos del cliente</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="container mt-3">
+        <h3>Formatos</h3>
+        <table class="table table-striped mt-3">
+          <thead>
+            <tr>
+              <th>Documento</th>
+              <th>Fecha</th>
+              <th>Usuario de Ventas</th>
+            </tr>
+          </thead>
+          <tr>
+            <td id="documento">
+              <a href="">Cotizacion.pdf</a>
+            </td>
+            <td id="fecha">2023-10-01</td>
+            <td id="usuario">Ventas 1</td>
+          </tr>
+        </table>
+      </div>
+      <div class="container mt-3">
+        <h3>Cotizacion en el Sistema</h3>
+        <table class="table table-striped mt-3">
+          <thead>
+            <tr>
+              <th>Documento</th>
+              <th>Fecha</th>
+              <th>Usuario de Ventas</th>
+            </tr>
+          </thead>
+          <tr>
+            <td id="documento">
+              <a href="">Cotizacion</a>
+            </td>
+            <td id="fecha">2023-10-01</td>
+            <td id="usuario">Ventas 1</td>
+          </tr>
+        </table>
+        <button class="btn btn-outline-success" id="btnEnviarPLD">
+          Enviar a PLD
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
