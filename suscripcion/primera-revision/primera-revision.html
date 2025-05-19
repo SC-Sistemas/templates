@@ -79,6 +79,13 @@
             <td id="fecha">2023-10-01</td>
             <td id="usuario">Ventas 1</td>
           </tr>
+          <tr>
+            <td id="documento">
+              <a href="">FormatoDeCotejo.pdf</a>
+            </td>
+            <td id="fecha">2023-10-01</td>
+            <td id="usuario">Ventas 1</td>
+          </tr>
         </table>
       </div>
       <div class="container mt-3">
@@ -111,6 +118,33 @@
               alert("Enviando a PLD");
             });
         </script>
+        <div class="mt-3">
+          <h3>Observaciones</h3>
+          <textarea
+            class="form-control"
+            id="observaciones"
+            rows="3"
+            placeholder="Observaciones presentadas en los documentos revisados"
+          ></textarea>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="revisionPDF"
+              >Archivos con observaciones</label
+            >
+            <input type="file" class="form-control" id="revisionPDF" />
+          </div>
+
+          <button class="btn btn-outline-warning" id="btnEnviarRevision">
+            Enviar datos a Ventas
+          </button>
+          <script>
+            document
+              .getElementById("btnEnviarRevision")
+              .addEventListener("click", function () {
+                alert("Enviando a Ventas (Revision)");
+              });
+          </script>
+          <div class="mt-5"></div>
+        </div>
       </div>
     </div>
   </body>

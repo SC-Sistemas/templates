@@ -131,16 +131,44 @@
             <td id="usuario">Ventas 1</td>
           </tr>
         </table>
-        <button class="btn btn-outline-success" id="btnEnviarEmision">
-          Enviar a Emision
-        </button>
-        <script>
-          document
-            .getElementById("btnEnviarEmision")
-            .addEventListener("click", function () {
-              alert("Enviando a Emision");
-            });
-        </script>
+        <div>
+          <button class="btn btn-outline-success" id="btnEnviarDirectorGeneral">
+            Enviar a Direccion General
+          </button>
+          <script>
+            document
+              .getElementById("btnEnviarDirectorGeneral")
+              .addEventListener("click", function () {
+                alert("Enviando a Director General");
+              });
+          </script>
+        </div>
+        <div class="mt-3">
+          <h3>Observaciones</h3>
+          <textarea
+            class="form-control"
+            id="observaciones"
+            rows="3"
+            placeholder="Observaciones presentadas en los documentos revisados"
+          ></textarea>
+          <div class="input-group mb-3">
+            <label class="input-group-text" for="revisionPDF"
+              >Archivos con observaciones</label
+            >
+            <input type="file" class="form-control" id="revisionPDF" />
+          </div>
+
+          <button class="btn btn-outline-warning" id="btnEnviarRevision">
+            Enviar datos a PLD
+          </button>
+          <script>
+            document
+              .getElementById("btnEnviarRevision")
+              .addEventListener("click", function () {
+                alert("Enviando a PLD (Revision)");
+              });
+          </script>
+        </div>
         <div class="mt-5"></div>
       </div>
     </div>
