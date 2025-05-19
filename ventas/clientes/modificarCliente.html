@@ -9,8 +9,8 @@
     />
     <title>Datos del Cliente</title>
   </head>
-  <body>
-    <div class="container mt-5">
+  <body class="mt-5 container">
+    <div>
       <h1>Datos del Cliente</h1>
       <div>
         <div class="mt-5">
@@ -22,7 +22,7 @@
                 type="text"
                 id="idCliente"
                 class="form-control"
-                placeholder="ID del Cliente"
+                placeholder="Nombre del Cliente"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -52,7 +52,7 @@
                 type="text"
                 id="apellidoMaternoCliente"
                 class="form-control"
-                placeholder="Apellido Paterno"
+                placeholder="Apellido Materno"
                 aria-describedby="basic-addon1"
               />
             </div>
@@ -67,7 +67,7 @@
               </select>
             </div>
             <div class="input-group mb-3">
-              <span class="input-group-text">RFC:</span>
+              <span class="input-group-text">RFC</span>
               <input
                 type="text"
                 id="rfcCliente"
@@ -90,13 +90,22 @@
           </form>
         </div>
         <div class="d-flex justify-content-between mt-3">
-          <a class="btn btn-outline-primary" href="../inicio.html">
-            Regresar a Inicio
+          <a class="btn btn-outline-primary" onclick="history.back()">
+            Regresar
           </a>
-          <button class="btn btn-success" type="submit" form="formDatosCliente">
-            Crear Cliente
+          <button class="btn btn-warning" id="btnActualizarDatos">
+            Actualizar Datos
           </button>
         </div>
+
+        <script>
+          let actualizarDatos = document.getElementById("btnActualizarDatos");
+          actualizarDatos.addEventListener("click", function (event) {
+            event.preventDefault(); // Evitar el envío del formulario por defecto
+            alert("Datos Actualizados");
+            window.location.href = "../inicio.html"; // Redirigir a la página de inicio
+          });
+        </script>
       </div>
     </div>
   </body>

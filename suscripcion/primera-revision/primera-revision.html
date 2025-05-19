@@ -86,14 +86,16 @@
         <table class="table table-striped mt-3">
           <thead>
             <tr>
-              <th>Documento</th>
+              <th>Registro</th>
               <th>Fecha</th>
               <th>Usuario de Ventas</th>
             </tr>
           </thead>
           <tr>
             <td id="documento">
-              <a href="">Cotizacion</a>
+              <a href="../../ventas/cotizacion-acciones/cotizacion-ver.html"
+                >Cotizacion</a
+              >
             </td>
             <td id="fecha">2023-10-01</td>
             <td id="usuario">Ventas 1</td>
@@ -102,6 +104,13 @@
         <button class="btn btn-outline-success" id="btnEnviarPLD">
           Enviar a PLD
         </button>
+        <script>
+          document
+            .getElementById("btnEnviarPLD")
+            .addEventListener("click", function () {
+              alert("Enviando a PLD");
+            });
+        </script>
       </div>
     </div>
   </body>
